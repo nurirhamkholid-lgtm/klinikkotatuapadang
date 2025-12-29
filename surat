@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik Kota Tuo Padang</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f9ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1e5799 0%, #207cca 100%);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            color: #4fc3f7;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .info-section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-title {
+            color: #1e5799;
+            border-left: 5px solid #207cca;
+            padding-left: 15px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        /* Table */
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        table caption {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e5799;
+            margin-bottom: 15px;
+            text-align: left;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e1f5fe;
+        }
+
+        th {
+            background-color: #1e5799;
+            color: white;
+            text-align: left;
+            padding: 18px 15px;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 16px 15px;
+            border-bottom: 1px solid #e8eef5;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8fbff;
+        }
+
+        tr:hover {
+            background-color: #e8f4fe;
+            transition: background-color 0.3s;
+        }
+
+        .signature-icon {
+            color: #1e5799;
+            margin-right: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a4d80;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 30px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+            
+            th, td {
+                padding: 12px 10px;
+                font-size: 0.95rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-hospital logo-icon"></i>
+                <div>
+                    <h1>KLINIK KOTA TUO PADANG</h1>
+                    <p class="subtitle">Pelayanan Kesehatan Terpercaya di Kota Padang</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <section class="info-section">
+                <h2 class="section-title">Tentang Klinik Kami</h2>
+                <p>Klinik Kota Tuo Padang merupakan fasilitas kesehatan yang memberikan pelayanan medis lengkap dengan dokter spesialis berpengalaman. Kami berkomitmen untuk memberikan pelayanan terbaik dengan standar kesehatan yang tinggi.</p>
+                <p>Klinik kami dilengkapi dengan sistem tanda tangan elektronik yang aman dan terverifikasi untuk semua dokumen medis.</p>
+            </section>
+
+            <section class="info-section">
+                <h2 class="section-title">Detail Tanda Tangan Elektronik</h2>
+                <p>Berikut adalah informasi detail tanda tangan elektronik untuk dokumen resmi Klinik Kota Tuo Padang:</p>
+                
+                <div class="table-container">
+                    <table>
+                        <caption>Informasi Tanda Tangan Elektronik</caption>
+                        <thead>
+                            <tr>
+                                <th width="30%">Jenis Dokumen</th>
+                                <th width="40%">Penanda Tangan</th>
+                                <th width="30%">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <i class="fas fa-file-medical signature-icon"></i>
+                                    Surat Keterangan Dokter
+                                </td>
+                                <td>
+                                    <i class="fas fa-user-md signature-icon"></i>
+                                    dr. Jadewaty Salim
+                                </td>
+                                <td>
+                                    <span style="color: #28a745; font-weight: bold;">
+                                        <i class="fas fa-check-circle"></i> Tervalidasi
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fas fa-prescription signature-icon"></i>
+                                    Resep Obat
+                                </td>
+                                <td>
+                                    <i class="fas fa-user-md signature-icon"></i>
+                                    dr. Jadewaty Salim
+                                </td>
+                                <td>
+                                    <span style="color: #28a745; font-weight: bold;">
+                                        <i class="fas fa-check-circle"></i> Tervalidasi
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fas fa-file-contract signature-icon"></i>
+                                    Surat Rujukan
+                                </td>
+                                <td>
+                                    <i class="fas fa-user-md signature-icon"></i>
+                                    dr. Jadewaty Salim
+                                </td>
+                                <td>
+                                    <span style="color: #ffc107; font-weight: bold;">
+                                        <i class="fas fa-clock"></i> Pending
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fas fa-report-medical signature-icon"></i>
+                                    Laporan Hasil Pemeriksaan
+                                </td>
+                                <td>
+                                    <i class="fas fa-user-md signature-icon"></i>
+                                    dr. Ahmad Fauzi, Sp.PD
+                                </td>
+                                <td>
+                                    <span style="color: #28a745; font-weight: bold;">
+                                        <i class="fas fa-check-circle"></i> Tervalidasi
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div style="margin-top: 25px; padding: 15px; background-color: #e8f4fe; border-radius: 8px; border-left: 4px solid #1e5799;">
+                    <h3 style="color: #1e5799; margin-bottom: 10px;">
+                        <i class="fas fa-info-circle"></i> Informasi Tanda Tangan Elektronik
+                    </h3>
+                    <p>Tanda tangan elektronik pada dokumen Klinik Kota Tuo Padang telah memenuhi standar keamanan dan keabsahan sesuai dengan peraturan perundang-undangan yang berlaku. Setiap dokumen yang ditandatangani secara elektronik memiliki kekuatan hukum yang sama dengan tanda tangan manual.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Klinik Kota Tuo Padang</h3>
+                <p>Jl. Kota Tuo No. 123, Padang, Sumatera Barat</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(0751) 556789</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@klinikkotatuopadang.id</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Buka Setiap Hari 08:00 - 21:00 WIB</span>
+                    </div>
+                </div>
+                <p style="margin-top: 20px; opacity: 0.8; font-size: 0.9rem;">
+                    &copy; 2023 Klinik Kota Tuo Padang. Semua hak dilindungi.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menambahkan efek interaktif pada baris tabel
+        document.addEventListener('DOMContentLoaded', function() {
+            const tableRows = document.querySelectorAll('table tbody tr');
+            
+            tableRows.forEach(row => {
+                row.addEventListener('click', function() {
+                    // Hapus highlight dari semua baris
+                    tableRows.forEach(r => r.style.backgroundColor = '');
+                    
+                    // Highlight baris yang diklik
+                    if(this.style.backgroundColor === 'rgb(232, 244, 254)') {
+                        this.style.backgroundColor = '';
+                    } else {
+                        this.style.backgroundColor = '#e8f4fe';
+                    }
+                });
+            });
+            
+            // Animasi saat halaman dimuat
+            const elementsToAnimate = document.querySelectorAll('.info-section, table');
+            elementsToAnimate.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        });
+    </script>
+</body>
+</html>
